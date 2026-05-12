@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio profesional de Máximo Alan Porrazzo – Desarrollador Front End y estudiante de Programación Informática." />
+  <meta name="keywords" content="portfolio, desarrollador frontend, HTML, CSS, JavaScript, React" />
+  <meta name="author" content="Máximo Alan Porrazzo" />
+  <title>Máximo Alan Porrazzo | Desarrollador Front End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <span class="loader__text">Kyoda.Dev</span>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">Kyoda.dev<span class="dot">.</span></a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-up">¡Hola, soy</p>
+      <h1 class="hero__name reveal-up">Máximo Alan<br /><span class="gradient-text">Porrazzo</span></h1>
+      <p class="hero__role reveal-up">Desarrollador Front End <span class="separator">|</span> Estudiante de Programación</p>
+      <p class="hero__sub reveal-up">Actualmente cursando la Tecnicatura en Programación Informática</p>
+      <div class="hero__actions reveal-up">
+        <a href="#proyectos" class="btn btn--primary" id="btn-proyectos">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--outline" id="btn-contacto">Contactarme</a>
+      </div>
+      <div class="hero__scroll-indicator reveal-up">
+        <div class="scroll-mouse"><div class="scroll-mouse__wheel"></div></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="section sobre-mi">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01. Sobre mí</span>
+        <h2 class="section__title">Conocé mi <span class="gradient-text">historia</span></h2>
+      </div>
+      <div class="sobre-mi__grid">
+        <div class="sobre-mi__photo-col">
+          <div class="photo-wrapper">
+            <div class="photo-ring"></div>
+            <div class="photo-circle">
+              <img src="https://ui-avatars.com/api/?name=MAP&background=7c3aed&color=fff&size=300&font-size=0.4&bold=true" alt="Foto de Máximo Alan Porrazzo" class="profile-img" />
+            </div>
+            <div class="photo-badge">
+              <svg class="icon-stroke icon-stroke--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <span>Frontend Dev</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-mi__content-col">
+          <p class="sobre-mi__text">Soy <strong>Máximo Alan Porrazzo</strong>, desarrollador Frontend y estudiante de la Tecnicatura en Programación Informática. Me apasiona construir <strong>interfaces modernas, elegantes e interactivas</strong> que brinden una experiencia de usuario excepcional.</p>
+          <p class="sobre-mi__text">Combino creatividad y código para transformar ideas en productos digitales reales. Estoy en constante aprendizaje de nuevas tecnologías, con foco en el ecosistema JavaScript y el diseño UI/UX moderno.</p>
+          <div class="sobre-mi__cards">
+            <div class="info-card">
+              <span class="info-card__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M8 7h8M8 11h6"/></svg></span>
+              <div>
+                <h4>Educación</h4>
+                <p>Tecnicatura en Programación Informática</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C8 17 4 14.2 4 10a8 8 0 1116 0c0 4.2-4 7-8 11.7z"/></svg></span>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Argentina</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5-1.26-2-5-2-5s1.74-6 8-6 8 4.74 8 4.74-1.5 4.26-2 5c-1.26 1.08-3.74 2.26-6 2.26s-4.74-1.18-6-2.26z"/><path d="M12 8.5V3l2 2M10 3l2 2"/></svg></span>
+              <div>
+                <h4>Disponibilidad</h4>
+                <p>Open to work · Freelance</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2v1"/><path d="M12 3a6 6 0 016 6c0 2.5-2 4-4 6H10c-2-2-4-3.5-4-6a6 6 0 016-6z"/></svg></span>
+              <div>
+                <h4>Intereses</h4>
+                <p>UI/UX · Web Apps · Sistemas</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contacto" class="btn btn--primary">Hablemos <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12h10M13 8l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section habilidades">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02. Habilidades</span>
+        <h2 class="section__title">Mi <span class="gradient-text">stack técnico</span></h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card" data-skill="90">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="10" ry="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>HTML5</h3>
+          <p>Estructura semántica, accesibilidad y SEO.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+          <span class="skill-level">90%</span>
+        </div>
+        <div class="skill-card" data-skill="85">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 12h10v8H4zM16 12h4v8h-4zM8 8h8"/></svg></div>
+          <h3>CSS3</h3>
+          <p>Animaciones, Flexbox, Grid y diseño responsive.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+          <span class="skill-level">85%</span>
+        </div>
+        <div class="skill-card" data-skill="80">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, APIs y lógica avanzada.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+          <span class="skill-level">80%</span>
+        </div>
+        <div class="skill-card" data-skill="65">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg></div>
+          <h3>React</h3>
+          <p>Componentes, hooks, estado y ciclo de vida.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+          <span class="skill-level">65%</span>
+        </div>
+        <div class="skill-card" data-skill="75">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/><path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+          <h3>Git</h3>
+          <p>Control de versiones, ramas y trabajo colaborativo.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+          <span class="skill-level">75%</span>
+        </div>
+        <div class="skill-card" data-skill="88">
+          <div class="skill-card__icon" aria-hidden="true"><svg class="icon-stroke icon-stroke--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first, media queries y diseño adaptable.</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
+          <span class="skill-level">88%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section proyectos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03. Proyectos</span>
+        <h2 class="section__title">Mi <span class="gradient-text">trabajo</span></h2>
+      </div>
+      <div class="projects__grid">
+        <a href="https://bgpimpresiones.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__img-wrap">
+            <img src="img/project-bgp-capas.png" alt="Sitio BGP CAPAS, impresión 3D" width="600" height="340" loading="lazy" />
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver sitio <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>BGP CAPAS</h3>
+            <p>Sitio para servicio de impresión 3D: servicios, proceso, trabajos y contacto con estética oscura y detalles en oro.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://tmartinez.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__img-wrap">
+            <img src="img/project-tienda-martinez.png" alt="Sitio Tienda Martínez" width="600" height="340" loading="lazy" />
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver sitio <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Tienda Martínez</h3>
+            <p>Tienda con enfoque deportivo: catálogo, navegación clara y hero con imagen a pantalla completa.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://proyeccionfutsal.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__img-wrap">
+            <img src="img/project-proyeccion-futsal.png" alt="Sitio Proyección Futsal" width="600" height="340" loading="lazy" />
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver sitio <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Proyección Futsal</h3>
+            <p>Landing para visibilidad de jugadores de futsal: mensaje central, llamados a la acción y sección de jugadores.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://estudiovalerioo.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__img-wrap">
+            <img src="img/project-valerio-estudio.png" alt="Sitio Valerio y Asociados, estudio jurídico" width="600" height="340" loading="lazy" />
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver sitio <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Valerio &amp; Asociados</h3>
+            <p>Landing de estudio jurídico con hero elegante, áreas de práctica y llamados a agendar consulta.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- EXPERIENCIA -->
+  <section id="experiencia" class="section experiencia">
+    <div class="container">
+      <div class="section__header section__header--compact">
+        <span class="section__tag mono-tag">04. Experiencia</span>
+        <h2 class="section__title section__title--compact">Trayectoria <span class="gradient-text">técnica</span></h2>
+      </div>
+
+      <div class="exp-bento" role="list">
+        <article class="exp-card exp-card--span-7" role="listitem">
+          <div class="exp-card__beam" aria-hidden="true"></div>
+          <div class="exp-card__inner">
+            <header class="exp-card__head">
+              <time class="exp-card__date mono" datetime="2025">2025 — ACT</time>
+              <svg class="exp-card__glyph icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+            </header>
+            <h3 class="exp-card__title">Tecnicatura en Programación Informática</h3>
+            <p class="exp-card__body">Formación universitaria: algoritmos, estructuras de datos, paradigmas y desarrollo de sistemas.</p>
+            <ul class="exp-card__tags mono">
+              <li>Universidad</li>
+              <li>Formal</li>
+              <li>Backend base</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-card exp-card--span-5" role="listitem">
+          <div class="exp-card__beam" aria-hidden="true"></div>
+          <div class="exp-card__inner">
+            <header class="exp-card__head">
+              <time class="exp-card__date mono" datetime="2025-2026">2025 — 2026</time>
+              <svg class="exp-card__glyph icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </header>
+            <h3 class="exp-card__title">Desarrollo Web · Coderhouse</h3>
+            <p class="exp-card__body">HTML, CSS y JavaScript. Proyecto final: sitio responsive, animaciones y lógica de interfaz.</p>
+            <ul class="exp-card__tags mono">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>Finalizado</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-card exp-card--span-4" role="listitem">
+          <div class="exp-card__beam" aria-hidden="true"></div>
+          <div class="exp-card__inner">
+            <header class="exp-card__head">
+              <time class="exp-card__date mono" datetime="2026">2026</time>
+              <svg class="exp-card__glyph icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+            </header>
+            <h3 class="exp-card__title">React · Coderhouse</h3>
+            <p class="exp-card__body">Componentes, hooks, estado, React Router y consumo de APIs.</p>
+            <ul class="exp-card__tags mono">
+              <li>React</li>
+              <li>JSX</li>
+              <li>Router</li>
+              <li>Finalizado</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-card exp-card--span-4" role="listitem">
+          <div class="exp-card__beam" aria-hidden="true"></div>
+          <div class="exp-card__inner">
+            <header class="exp-card__head">
+              <time class="exp-card__date mono" datetime="2026">2026 — ACT</time>
+              <svg class="exp-card__glyph icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M2 13h20"/></svg>
+            </header>
+            <h3 class="exp-card__title">Freelance</h3>
+            <p class="exp-card__body">Landings, portfolios y sitios corporativos para clientes reales.</p>
+            <ul class="exp-card__tags mono">
+              <li>Cliente</li>
+              <li>Deploy</li>
+              <li>UI</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-card exp-card--span-4" role="listitem">
+          <div class="exp-card__beam" aria-hidden="true"></div>
+          <div class="exp-card__inner">
+            <header class="exp-card__head">
+              <time class="exp-card__date mono">CONTINUO</time>
+              <svg class="exp-card__glyph icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+            </header>
+            <h3 class="exp-card__title">Proyectos personales</h3>
+            <p class="exp-card__body">Repos y experimentos para subir el nivel: nuevas libs, patrones y tooling.</p>
+            <ul class="exp-card__tags mono">
+              <li>GitHub</li>
+              <li>R&amp;D</li>
+              <li>Open</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contacto">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05. Contacto</span>
+        <h2 class="section__title">Hablemos <span class="gradient-text">juntos</span></h2>
+        <p class="section__subtitle">¿Tenés un proyecto en mente? Escribime y lo hacemos realidad.</p>
+      </div>
+      <div class="contacto__grid">
+        <div class="contacto__info">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link" id="link-github">
+            <span class="contact-link__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></span>
+            <div><strong>GitHub</strong><span>github.com/maximo</span></div>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-link" id="link-linkedin">
+            <span class="contact-link__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <div><strong>LinkedIn</strong><span>linkedin.com/in/maximo</span></div>
+          </a>
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noopener" class="contact-link" id="link-whatsapp">
+            <span class="contact-link__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8.5z"/></svg></span>
+            <div><strong>WhatsApp</strong><span>Escribime directo</span></div>
+          </a>
+          <a href="mailto:maximo@email.com" class="contact-link" id="link-email">
+            <span class="contact-link__icon" aria-hidden="true"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <div><strong>Email</strong><span>maximo@email.com</span></div>
+          </a>
+        </div>
+        <form class="contacto__form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="btn-enviar">Enviar mensaje <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form__success" id="form-success"><svg class="icon-stroke icon-stroke--inline form__success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Mensaje enviado. Te respondo pronto.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo">MAP<span class="dot">.</span></a>
+        <p class="footer__tagline">Construyendo el futuro, un pixel a la vez.</p>
+        <div class="footer__socials">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="WhatsApp">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:maximo@email.com" class="footer__social-link" aria-label="Email">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Máximo Alan Porrazzo. Todos los derechos reservados.</p>
+        <p>Hecho con cuidado desde Argentina</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Volver arriba"><svg class="icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
