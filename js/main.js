@@ -335,25 +335,35 @@ function initForm() {
 
         e.preventDefault();
 
-        // Get form data
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
 
-        // Simulate form submission
+        // VALIDACIONES
+        if (!data.nombre || !data.email || !data.mensaje) {
+            alert("Completa todos los campos");
+            return;
+        }
+
+        // Validar email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(data.email)) {
+            alert("Ingresá un email válido");
+            return;
+        }
+
         submitBtn.disabled = true;
         submitBtn.textContent = "Enviando...";
 
         try {
 
-            // Simulate API call
+            // Simulación API
             await new Promise((resolve) => setTimeout(resolve, 2000));
 
-            // Show success message
             successMsg.style.display = "flex";
 
             form.reset();
 
-            // Hide success message after 5 seconds
             setTimeout(() => {
                 successMsg.style.display = "none";
             }, 5000);
@@ -362,9 +372,7 @@ function initForm() {
 
             console.error("Error sending form:", error);
 
-            alert(
-                "Error al enviar el mensaje. Por favor, intenta nuevamente."
-            );
+            alert("Error al enviar el mensaje");
 
         } finally {
 
