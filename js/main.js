@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initScrollAnimations();
     initParallax();
     initBackToTop();
-    initForm();
     initSmoothScroll();
 });
 
@@ -320,66 +319,6 @@ function initBackToTop() {
             top: 0,
             behavior: "smooth",
         });
-
-    });
-}
-
-// ===== FORM =====
-function initForm() {
-
-    const form = document.getElementById("contact-form");
-    const successMsg = document.querySelector(".form__success");
-    const submitBtn = document.getElementById("btn-enviar");
-
-    form.addEventListener("submit", async (e) => {
-
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
-
-        // VALIDACIONES
-        if (!data.nombre || !data.email || !data.mensaje) {
-            alert("Completa todos los campos");
-            return;
-        }
-
-        // Validar email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailRegex.test(data.email)) {
-            alert("Ingresá un email válido");
-            return;
-        }
-
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Enviando...";
-
-        try {
-
-            // Simulación API
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-
-            successMsg.style.display = "flex";
-
-            form.reset();
-
-            setTimeout(() => {
-                successMsg.style.display = "none";
-            }, 5000);
-
-        } catch (error) {
-
-            console.error("Error sending form:", error);
-
-            alert("Error al enviar el mensaje");
-
-        } finally {
-
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Enviar mensaje →";
-
-        }
 
     });
 }

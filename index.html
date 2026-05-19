@@ -378,22 +378,23 @@
             <div><strong>Gmail</strong><span>maxiporrazzo@gmail.com</span></div>
           </a>
         </div>
-        <form class="contacto__form" id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+        <div class="contacto__panel" aria-label="Opciones de contacto">
+          <span class="contacto__eyebrow">Disponible para proyectos</span>
+          <h3>Contame que queres construir</h3>
+          <p>Podemos hablar por WhatsApp, email o LinkedIn. Si tenes una idea, una mejora para tu sitio o queres revisar un proyecto existente, escribime por el canal que te resulte mas comodo.</p>
+          <div class="contacto__actions" aria-label="Acciones principales de contacto">
+            <a href="https://wa.me/+5491140245754" target="_blank" rel="noopener" class="btn btn--primary">
+              WhatsApp <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="mailto:maxiporrazzo@gmail.com" class="btn btn--outline">
+              Gmail <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </a>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame tu proyecto..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full" id="btn-enviar">Enviar mensaje <svg class="icon-stroke icon-stroke--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="form__success" id="form-success"><svg class="icon-stroke icon-stroke--inline form__success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Mensaje enviado. Te respondo pronto.</p>
-        </form>
+          <ul class="contacto__notes">
+            <li>Respondo consultas sobre sitios web, interfaces y proyectos frontend.</li>
+            <li>Tambien podes ver mi codigo en GitHub o conectar conmigo en LinkedIn.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
